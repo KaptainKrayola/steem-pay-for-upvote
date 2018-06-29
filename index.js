@@ -11,10 +11,6 @@ const sendList = require('./sendlist');
 const stdin = process.stdin;
 const postURL = process.argv.pop();
 
-// steem.broadcast.transfer(wif, process.env.FROM, 'kaptainkrayola', '0.001 SBD', postURL, function(err, result) {
-// 	console.log(err, result);
-//   });
-
 let toatlSend = 0;
 for(let i in sendList) {
 	toatlSend  += sendList[i];
