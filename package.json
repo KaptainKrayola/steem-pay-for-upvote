@@ -1,0 +1,26 @@
+{
+  "name": "steem-pay-for-upvote",
+  "version": "1.0.0",
+  "description": "A simple node app that will take a list of promoters and send them SBD to promote your post.  This does not keep any history or anything it just sends the SBD for you.",
+  "main": "index.js",
+  "dependencies": {
+    "async": "^2.6.1",
+    "dotenv": "^6.0.0",
+    "steem": "^0.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaptainKrayola/steem-pay-for-upvote.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KaptainKrayola/steem-pay-for-upvote/issues"
+  },
+  "homepage": "https://github.com/KaptainKrayola/steem-pay-for-upvote#readme"
+}

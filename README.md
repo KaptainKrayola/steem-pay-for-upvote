@@ -2,7 +2,7 @@
 A simple node app that will take a list of promoters and send them SBD to promote your post.  This does not keep any history or anything it just sends the SBD for you.
 
 ### Setup
-Clone the repository and cd into the folder.  Inside the folder do
+Clone the repository and cd into the folder.  Inside the folder run
 ```
 npm install
 ```
