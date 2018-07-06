@@ -13,8 +13,9 @@ const postURL = process.argv.pop();
 
 let toatlSend = 0;
 for(let i in sendList) {
-	toatlSend  += sendList[i];
+	toatlSend  += parseFloat(sendList[i]);
 }
+	
 
 console.log(`Are you sure you want to use ${toatlSend} SBD to promote ${postURL}? (Y/n)`);
 
@@ -26,7 +27,7 @@ stdin.on('data', function(chunk) {
 })
 
 function sendPayments() {
-	async.eachOf(sendList, function(amount, to, next) {
+	async.eachOfSeries(sendList, function(amount, to, next) {
 		console.log(`Sending ${amount} to ${to}`);
 		steem.broadcast.transfer(wif, process.env.FROM, to, `${amount} SBD`, postURL, function(err, result) {
 			next(err);
